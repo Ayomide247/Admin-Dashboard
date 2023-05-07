@@ -55,5 +55,5 @@ container.addEventListener('submit', (e) => {
         password: container.elements.password.value,  
     }
     localStorage.setItem('userDatas', JSON.stringify(userData));
-    //  window.location.href = 'email_confirm.html';
+     window.location.href = 'email_confirm.html';
 })
