@@ -16,8 +16,8 @@
 </head>
 <body class="sm:bg-[#F8FAFC] lg:bg-white text-[#5B6871] h-[100%]">
 
-    <div class="logo p-5  md:m-10 lg:hidden">
-        <img class="w-[100px] " src="./assets/img/Group 2.png" alt="">
+    <div class="logo p-5  md:m-10 lg:hidden ">
+        <img class="w-[100px] " src="./assets/img/buddy.png" alt="">
     </div>
 
 
@@ -26,7 +26,7 @@
            
             <div class="block py-5 px-2 md:px-10 bg-white md:mx-auto md:w-full md:max-w-lg md:rounded-md">
                 <div class="logo md:flex mb-16">
-                    <img class="" src="./assets/img/Group 2.png" alt="">
+                    <img class="" src="./assets/img/buddy.png" alt="">
                 </div>
                 <div class="flex gap-3 mb-10">
                     <span class="bg-[orange] h-fit rounded-full px-1 text-white m-auto "><i class="bi bi-check"></i></span>
@@ -55,18 +55,18 @@
                 
                 <h1 class=" font-semibold text-xl md:text-[25px]  text-slate-950">Log in to your account</h1>
                 <p class="text-[13px] md:text-[15px] font-normal mt-3 md:mt-7">Proceed to create account and setup your organization</p>
-                <form action="get" method="get"> 
+                <form id="container" action="get" method="get"> 
 
-                    <div class=" flex gap-2 border-solid border-[1px] py-3 md:py-3 px-3 mt-3 rounded-md text-sm text-[#bebebe]">
+                    <div id="formDiv" class=" flex gap-2 border-solid border-[1px] py-3 md:py-3 px-3 mt-3 rounded-md text-sm text-[#bebebe] ">
                         <span><i class="bi bi-envelope-fill"></i></span>
-                        <input type="text" placeholder="Email" class=" outline-none w-full  ">
+                        <input id="inputDiv" type="email" placeholder="Email" class=" outline-none w-full  ">
                     </div>
-                    <div class=" flex gap-2 border-solid border-[1px] py-3 md:py-3 px-3 mt-4 rounded-md text-sm text-[#bebebe]">
+                    <div id="formDiv" class=" flex gap-2 border-solid border-[1px] py-3 md:py-3 px-3 mt-4 rounded-md text-sm text-[#bebebe]">
                         <span><i class="bi bi-unlock-fill"></i></span>
-                        <input type="text" placeholder="Password" class=" outline-none w-full ">
+                        <input id="inputDiv" type="password" placeholder="Password" class=" outline-none w-full ">
                     </div>
 
-                    <div class="bg-[#ECEDED] text-center my-7 rounded-md text-sm p-3 font-medium text-[#bebebe] cursor-pointer hover:bg-[#cacaca] hover:text-[#ECEDED] border"><a href="dashboard.html">Login</a></div>
+                    <button  class="bg-[#F8FAFC] text-center my-7 rounded-md text-sm p-3 font-medium text-[#bebebe] cursor-pointer hover:bg-[#f7fbff] hover:text-[#c8c8c8] border hover:-translate-y-1 transition w-full " disabled>Login</button>
 
                     <p class="text-[14px] p-2 text-[#bebebe] leading-4 mb-10">By clicking the above, you agree to our <span class="text-[#FF8600]">Terms of service</span> and <span class="text-[#FF8600]">Privacy policy</span></p>
 
@@ -87,6 +87,6 @@
         </div>
     </div>
     
-    <script src="./script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

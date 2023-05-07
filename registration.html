@@ -17,7 +17,7 @@
 <body class="sm:bg-[#F8FAFC] lg:bg-white text-[#5B6871] h-[100%]">
 
     <div class="logo p-5  md:m-10 lg:hidden">
-        <img class="w-[100px] " src="./assets/img/Group 2.png" alt="">
+        <img class="w-[100px] " src="./assets/img/buddy.png" alt="">
     </div>
 
 
@@ -26,7 +26,7 @@
            
             <div class="block py-5 px-2 md:px-10 bg-white md:mx-auto md:w-full md:max-w-lg md:rounded-md">
                 <div class="logo md:flex mb-16">
-                    <img class="" src="./assets/img/Group 2.png" alt="">
+                    <img class="" src="./assets/img/buddy.png" alt="">
                 </div>
                 <div class="flex gap-3 mb-10">
                     <span class="bg-[orange] h-fit rounded-full px-1 text-white m-auto "><i class="bi bi-check"></i></span>
@@ -54,34 +54,34 @@
             <div class="block py-5 px-4 lg:px-10 bg-white leading-3 border drop-shadow-xl my-5 mx-5 md:text-[25px]  lg:mx-auto lg:w-full lg:max-w-lg lg:rounded-md">
                 <h1 class=" font-semibold text-xl md:text-[25px]  text-slate-950">Register your account</h1>
                 <p class="text-[12px] md:text-[15px] font-normal md:mt-4">Proceed to create account and setup your organization</p>
-                <form action="get" method="get"> 
 
+                <form id="container" action="" method=""> 
                     <div class="grid grid-cols-2 gap-3">
-                        <div class=" flex gap-2 border-solid border-[1px] py-3 md:py-3 px-3 mt-3 rounded-md text-sm text-[#bebebe] w-full">
+                        <div  id="formDiv" class=" flex gap-2 border-solid border-[1px] py-3 md:py-3 px-3 mt-3 rounded-md text-sm text-[#bebebe] w-full">
                             <span><i class="bi bi-person-fill"></i></span>
-                            <input type="text" placeholder="First Name" class=" outline-none w-full  ">
+                            <input type="name" placeholder="First Name" name="firstName" class=" outline-none w-full  ">
                         </div>
-                        <div class=" flex gap-2 border-solid border-[1px] py-3 md:py-3 px-3 mt-3 rounded-md text-sm text-[#bebebe] w-full">
+                        <div   id="formDiv" class=" flex gap-2 border-solid border-[1px] py-3 md:py-3 px-3 mt-3 rounded-md text-sm text-[#bebebe] w-full">
                             <span><i class="bi bi-person-fill"></i></span>
-                            <input type="text" placeholder="Last Name" class=" outline-none w-full  ">
+                            <input type="name" placeholder="Last Name" name="lastName" class=" outline-none w-full  ">
                         </div> 
                     </div>
 
-                    <div class=" flex gap-2 border-solid border-[1px] py-3 md:py-3 px-3 mt-3 rounded-md text-sm text-[#bebebe]">
+                    <div  id="formDiv" class=" flex gap-2 border-solid border-[1px] py-3 md:py-3 px-3 mt-3 rounded-md text-sm text-[#bebebe]">
                         <span><i class="bi bi-envelope-fill"></i></span>
-                        <input type="text" placeholder="Work Email" class=" outline-none w-full  ">
+                        <input type="email" placeholder="Work Email" name="email" class=" outline-none w-full  ">
                     </div>
-                    <div class=" flex gap-2 border-solid border-[1px] py-3 md:py-3 px-3 mt-3 rounded-md text-sm text-[#bebebe]">
+                    <div  id="formDiv" class=" flex gap-2 border-solid border-[1px] py-3 md:py-3 px-3 mt-3 rounded-md text-sm text-[#bebebe]">
                         <span><i class="bi bi-unlock-fill"></i></span>
-                        <input type="text" placeholder="Password" class=" outline-none w-full ">
+                        <input type="password" placeholder="Password" name="password" class=" outline-none w-full ">
                     </div>
 
-                    <div class="bg-[#ECEDED] text-center my-7 rounded-md text-sm p-3 font-medium text-[#bebebe] cursor-pointer hover:bg-[#cacaca] hover:text-[#ECEDED] border"><a href="email_confirm.html">Create Account</a></div>
+                    <button class="bg-[#F8FAFC] text-center my-7 rounded-md text-sm p-3 font-medium text-[#bebebe] cursor-pointer hover:bg-[#f7fbff] hover:text-[#c8c8c8] border hover:-translate-y-1 transition w-full " disabled>Create Account</button>
 
                     <p class="text-[14px] p-2 text-[#bebebe] leading-4 mb-10">By clicking the above, you agree to our <span class="text-[#FF8600]">Terms of service</span> and <span class="text-[#FF8600]">Privacy policy</span></p>
 
                     
-                    <p class="text-[14px] p-2 text-[#bebebe] leading-4">Already have an account?  <a class="text-[#FF8600]" href="./index.html">Login</a></p>
+                    <p class="text-[14px] p-2 text-[#bebebe] leading-4" get="">Already have an account?  <a class="text-[#FF8600]" href="./index.html" >Login</a></p>
 
                     <div class="md:hidden text-[11px] flex gap-3 justify-end  text-white mx-7 my-5">
                         <p class="bg-[#FF8600] drop-shadow-xl w-fit py-3 px-3 rounded-full">Get Help <span><i class="bi bi-chat"></i></span></p>
@@ -98,6 +98,6 @@
         </div>
     </div>
     
-  <script src="./script.js"></script>
+  <script src="registration.js"></script>
 </body>
 </html>

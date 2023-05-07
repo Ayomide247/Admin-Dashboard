@@ -3,10 +3,20 @@ const sideBar = document.querySelector('.sidemenu')
 const sideBarOverlay = document.querySelector('.sidebar-overlay')
 
 
+
+// -----------Menu Button-----------------//
 const toggleSideNav = () => sideBar.classList.toggle('-translate-x-96')
 
 menuBtn.addEventListener('click', () => toggleSideNav())
 sideBarOverlay.addEventListener('click', () => toggleSideNav())
+
+
+
+
+
+
+
+
 
 
 // const profile = document.getElementById('profile')
