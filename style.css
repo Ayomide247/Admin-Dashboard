@@ -18,3 +18,8 @@ box-sizing: none;
     border: 1px solid #f6f7ed;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
